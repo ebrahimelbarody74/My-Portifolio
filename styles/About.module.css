@@ -1,0 +1,114 @@
+.about{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.aboutImg{
+    flex: 1;
+}
+.aboutImg img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.aboutMe{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+.aboutMe .aboutTxt span:nth-child(1){
+    color: #fff;
+}
+.aboutMe .aboutTxt{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 0 2px 18px;
+    position: relative;
+    z-index: 1;
+}
+.aboutMe .aboutTxt::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    background-color: #ffc455;
+    z-index: -10;
+}
+.aboutMe h1{
+    color: #ff5352;
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.aboutMe .aboutDesc{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation: shine 5s linear infinite;
+    -webkit-animation: shine 5s linear infinite;
+    background: linear-gradient(90deg,#ffc455 0,#ff5352 10%,#00c8da 15%,#00da54 20%,#556d91 30%);
+    -webkit-background-clip: text;
+    background-position: 0;
+    border-left: 3px solid #ffc455;
+    color: #222;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 27px;
+    padding-left: 12px;
+    padding-top: 6px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@keyframes shine{
+    0%{
+        background-position: 0%;
+    }
+    60%{
+        background-position: 180px;
+    }
+    100%{
+        background-position: 280px;
+    }
+}
+
+.aboutMe .aboutBtn{
+    display: flex;
+    justify-content: center;
+}
+.aboutMe .aboutBtn button{
+    background-color: #ffc455;
+    border: 1px solid #ffc455;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Josefin Sans,sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+@media(max-width:1250px){
+    .about{
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width:450px){
+    .aboutMe{
+        padding: 0;
+    }
+}
+

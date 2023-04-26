@@ -1,0 +1,83 @@
+.contact{
+    width: 70%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.contact form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.contact form input{
+    width: calc(50% - 2rem);
+    padding: 20px 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.contact form textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c7cdd3;
+    color: #212529;
+    font-size: 16px;
+    outline: none;
+    padding: 0 10px 25px 0;
+}
+
+.contact  button{
+    background-color: #ff5352;
+    border: none;
+    box-shadow: 0 8px 20px 0 rgba(255,81,126,.3);
+    color: #fff;
+    cursor: pointer;
+    font-family: Josefin Sans,sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+    outline: none;
+    padding: 20px 30px;
+    transition: all .3s ease-in-out;
+    border-radius: 30px;
+}
+
+.contact  button:hover{
+    opacity: .7;
+}
+
+.contact .contactList{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contact .contactList .contactItem{
+    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    gap: 1rem;
+}
+
+.contact .contactList .contactItem svg{
+    font-size: 36px;
+}
+.contact .contactList .contactItem h3{
+    color: #556d91;
+    font-size: 22px;
+    font-weight: 700;
+}
+.contact .contactList .contactItem span{
+    align-items: center;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}

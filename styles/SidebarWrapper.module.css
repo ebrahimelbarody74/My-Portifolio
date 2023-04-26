@@ -1,0 +1,149 @@
+
+.sidebarWrapper{
+    flex: 1 1;
+    box-shadow: 0 3px 12px rgba(0,0,0,.09);
+    position: fixed;
+    top: 0;
+    width: 100px;
+    left: 0;
+    height: 100vh;
+    transition: .4s ease-in-out;
+    z-index: 100 !important;
+
+}
+.sideImg{
+    text-align: center;
+    padding: 10px 0;
+}
+.profileImg{
+    border-radius: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.sidebarWrapper .about li{
+    height: 85px;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+.sidebarWrapper .about li a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+.sidebarWrapper .about li a span{
+    position: absolute;
+    bottom: -20px;
+    transition: .3s ease-in-out;
+
+}
+.sidebarWrapper .about li:first-child:hover{
+    background-color: #ff4a4a2e;
+}
+.sidebarWrapper ul.about li:nth-child(2):hover{
+    background-color: #1bcae538;
+}
+.sidebarWrapper ul.about li:nth-child(3):hover{
+    background-color: rgba(0, 218, 84, 0.15);;
+}
+.sidebarWrapper ul.about li:hover a span{
+    bottom: 5px;
+}
+
+.sidebarWrapper ul.about li:first-child a svg{
+    color: #ff5352;
+    fill: currentcolor;
+}
+.sidebarWrapper ul.about li:nth-child(2) a svg{
+    color: #00c8da;
+    fill: currentColor;
+}
+.sidebarWrapper ul.about li:nth-child(3) a svg{
+    color: #00da54;
+    fill: currentColor;
+}
+
+
+.sidebarWrapper ul.follow{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+
+    
+}
+
+.sidebarWrapper ul.follow span{
+    margin-bottom: 20px;
+}
+.sidebarWrapper ul.follow li{
+    position: relative;
+
+}
+.sidebarWrapper ul.follow li svg{
+    transition: .4s ease-in-out;
+}
+.sidebarWrapper ul.follow li svg:nth-child(2){
+    position: absolute;
+                    top: 2px;
+                    left: -25px;
+                    opacity: 0;
+    opacity: 0;
+}
+.sidebarWrapper ul.follow li svg:nth-child(1){
+    opacity: 1;
+}
+.sidebarWrapper ul.follow li:hover svg:nth-child(2){
+    transform: translateX(25px);
+    opacity: 1;
+}
+.sidebarWrapper ul.follow li:hover svg:nth-child(1){
+    transform: translateX(25px);
+    opacity: 0;
+}
+
+.sidebarWrapper ul.follow li:nth-child(1) svg{
+    color: #c9510c;
+    fill: #c9510c;
+}
+.sidebarWrapper ul.follow li:nth-child(2) svg{
+    color: #c9510c;
+    fill: #c9510c;
+}
+.sidebarWrapper ul.follow li:nth-child(3) svg{
+    color: #0077b5;
+    fill: #0077b5;
+}
+.sidebarWrapper ul.follow li:nth-child(4) svg{
+    color: #25d366;
+    fill: #25d366;
+}
+.sidebarWrapper ul.follow li:nth-child(5) svg{
+    color: #1877f2;
+    fill: #1877f2;
+}
+.sidebarWrapper ul.follow li:nth-child(6) svg{
+    color: #1da1f2;
+    fill: #1da1f2;
+}
+
+
+@media(max-width:800px){
+    .sidebarWrapper{
+        transform: translateX(-200px) !important;
+    }
+}
+
+@media(max-width:800px){
+    .sidebarWrapper.no{
+        transform: translateX(0px) !important;
+        z-index: 100 !important;
+        background-color: #fff;
+    }
+}

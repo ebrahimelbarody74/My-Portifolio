@@ -1,0 +1,26 @@
+.df{
+    display: flex;
+
+}
+.homeContainer{
+    flex: 8 1;
+    padding-left: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none !important;
+    font-size: 30px
+}
+@media(max-width:800px){
+    .homeContainer{
+        padding-left: 0;
+    }
+    .menu{
+        display: block !important;
+    }
+}

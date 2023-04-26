@@ -1,0 +1,34 @@
+.skills{
+    padding: 20px;
+    width: 100%;
+}
+.skills h1{
+    color: #556d91;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto;
+    position: relative;
+    text-transform: capitalize;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.skills .skillBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+
+}
+.skills .skillBox .skillItem{
+    box-shadow: 0 2px 8px 0 rgba(99,99,99,.2);
+    padding: 10px 20px;
+    border-left: 4px solid #ffc455;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.skills img{
+    object-fit:contain !important
+}
