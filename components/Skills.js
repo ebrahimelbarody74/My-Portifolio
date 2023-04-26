@@ -41,7 +41,7 @@ function Skills() {
         </div>
         <div className={styles.skillItem}>
           <Image
-            src="/bootstrap5.98585727bcfe0b1555649ec9bbab236c.svg"
+            src="/bootstrap.svg"
             width={30}
             height={30}
           />
@@ -57,14 +57,14 @@ function Skills() {
         </div>
         <div className={styles.skillItem}>
           <Image
-            src="/css3.7b05526845d7a6672ee3f536a71c20f8.svg"
+            src="/css.svg"
             width={30}
             height={30}
           />
           <span>Css</span>
         </div>
         <div className={styles.skillItem}>
-          <Image src="/mongodb (1).png" width={30} height={30} />
+          <Image src="/mongodb.png" width={30} height={30} />
           <span>MongoDB</span>
         </div>
         <div className={styles.skillItem}>
@@ -72,7 +72,7 @@ function Skills() {
           <span>PHP</span>
         </div>
         <div className={styles.skillItem}>
-          <Image src="/icons8-node-js-48.png" width={30} height={30} />
+          <Image src="/node.png" width={30} height={30} />
           <span>Nodejs</span>
         </div>
       </div>

@@ -108,7 +108,7 @@
 
 @media(max-width:450px){
     .aboutMe{
-        padding: 0;
+        padding: 10px;
     }
 }
 

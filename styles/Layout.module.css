@@ -11,10 +11,17 @@
 }
 
 .menu{
-    margin-left: auto;
     cursor: pointer;
     display: none !important;
-    font-size: 30px
+    font-size: 48px;
+    display: none;
+    position: absolute;
+    right: 10px;
+    z-index: 20;
+    transition: .2s ease-in-out;
+}
+.menu:hover{
+    color: red;
 }
 @media(max-width:800px){
     .homeContainer{
