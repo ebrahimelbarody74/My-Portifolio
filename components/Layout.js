@@ -38,7 +38,7 @@ function Layout(props) {
           <About />
           <Skills />
           <Projects />
-          <SmallProjects />
+          {/* <SmallProjects /> */}
           <Contact />
           <Footer />
         </div>

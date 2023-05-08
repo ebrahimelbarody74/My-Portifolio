@@ -14,7 +14,9 @@ function SidebarWrapper({ menu }) {
   });
   return (
     <div
-      className={menu ? `${styles.sidebarWrapper} ${styles.no}` : styles.sidebarWrapper}
+      className={
+        menu ? `${styles.sidebarWrapper} ${styles.no}` : styles.sidebarWrapper
+      }
       // style={
       //   menu
       //     ? { transform: "translate(1px) !important" }
@@ -56,7 +58,7 @@ function SidebarWrapper({ menu }) {
         <ul className={styles.follow}>
           <span>Follow me</span>
           <li>
-            <Link href="#">
+            <Link href="https://github.com/ebrahimelbarody74">
               <GitHub />
               <GitHub />
             </Link>
