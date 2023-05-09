@@ -25,7 +25,7 @@ function Layout(props) {
     }, 2000);
     setTimeout(() => {
       setWelcome(false);
-    }, 10000);
+    }, 9000);
   }, []);
 
   return (
