@@ -28,6 +28,7 @@
   padding: 12px 0 2px 18px;
   position: relative;
   z-index: 1;
+  /* width: 500px; */
 }
 .aboutMe .aboutTxt::before {
   content: "";
